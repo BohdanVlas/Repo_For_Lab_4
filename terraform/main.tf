@@ -43,7 +43,7 @@ resource "aws_security_group" "web_app" {
 
 resource "aws_instance" "webapp_instance" {
   ami           = "ami-0669b163befffbdfc"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   security_groups= ["web_app"]
   tags = {
     Name = "webapp_instance"
